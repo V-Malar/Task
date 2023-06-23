@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(255, 183, 157);
+}
+
+label, h1:hover {
+    cursor: pointer;
+}
+
+.year {
+    display: flex;
+    gap: 1.25in;
+    width: 6.6in;
+    margin-left: 1.4rem;
+    border: 2px solid blueviolet;
+    border-radius: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+.year h1 {
+    border: 1px solid burlywood;
+    padding: 0.1rem;
+    text-align: center;
+}
+.year h1:hover
+{
+    color: rgb(153, 85, 1);
+}
+.head {
+    font-size: 1.9rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0rem;
+    box-sizing: border-box;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    width: 7in;
+    height: 9in;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    color: cornsilk;
+    background-color: rgba(235, 178, 235, 0.678);
+    box-shadow: 0 0 35px 0.5px rgb(205, 255, 155) inset;
+}
+
+.no {
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 1em;
+    box-sizing: border-box;
+    border-color: blanchedalmond;
+    box-shadow: 0 0 15px 15px rgb(188, 211, 177) inset;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.nohover:hover {
+    border-radius: 10%;
+    box-shadow: 0 0 15px 10px rgb(255, 228, 228);
+}
+
+label {
+    padding: 0.4rem;
+}
+
+.form input {
+    display: grid;
+    margin-left: 2.5in;
+    margin-top: 0.5rem;
+    padding: 10px;
+    font-size: 23px;
+}
+
+.form input:focus {
+    background-color: rgba(188, 123, 250, 0.459);
+}
+
+.move {
+    display: flex;
+}
+
+#submit {
+    margin-top: 0.5rem;
+    margin-left: 0.7in;
+    background-color: rgb(255, 95, 127);
+    border: none;
+    padding: 15px;
+    border-radius: 0.4rem;
+    font-weight: 700;
+}
+
+#submit:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+    color: black;
+    box-shadow: 0 0 35px 0.5px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: rgba(255, 226, 153, 0.548);
+    border: none;
+    color: black;
+}
+
+.outputy {
+    font-weight: 700;
+}
+
+.cost {
+    color: rgb(255, 0, 51);
+}
+
+.outview {
+    position: absolute;
+    top: 3in;
+    left: 11in;
+    padding: 0.7rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: rgb(255, 95, 127);
+    margin-top: 0.5rem;
+    width: 1.5in;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.555);
+    animation-timing-function: 2s linear ease-in-out;
+    font-size: 23px;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.thick {
+    color: #000;
+}
+
+.dropdown-items {
+    background-color: rgba(71, 184, 37, 0.527);
+    box-sizing: border-box;
+    width: 1.5in;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0rem;
+}
+
+.dropdown-items span:hover {
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.out {
+    display: none;
+}
+
+.dropdown {
+    display: block;
+    width: 1.5in;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.table {
+    position: absolute;
+    left: -10in;
+    top: 9in;
+}
+
+.table tr {
+    border: 1px solid black;
+}
+
+td {
+    width: 1in;
+    box-sizing: border-box;
+}
